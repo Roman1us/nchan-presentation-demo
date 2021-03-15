@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker build --target="$1" -t nchan-demo:"$1" . && docker run --rm -p 127.0.0.1:80:80 nchan-demo:"$1"
